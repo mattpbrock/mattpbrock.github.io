@@ -12,6 +12,9 @@ description: > # this means to ignore newlines until "baseurl:"
   This is the website for all things Matt Brock. Music, Photo, Web Design, etc.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://mattpbrock.com" # the base hostname & protocol for your site
+facebookmusic_username: mattbrockmusic
+facebookphoto_username: mattbrockphoto
+instagram_username: mattpbrock
 twitter_username: mattpbrock
 github_username:  mattpbrock
 

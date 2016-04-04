@@ -26,3 +26,22 @@ a:hover {
 		font-size: 20px;
 	}
 }
+
+.social {
+	
+	&__link {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	
+	&__icon {
+		width: 40px;
+		opacity: 0.85;
+		
+		&:hover {
+			opacity: 1;
+		}
+	}
+	
+}
