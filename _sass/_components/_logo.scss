@@ -2,8 +2,17 @@
 ================================================== */
 
 .logo {
-	width: 100px;
-	fill: $color-site-logo;
 	
-	path { fill: $color-site-logo; }
+	&__wrapper {
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+		transform: translateY(-9px);
+	}
+	
+	width: 100px;
+	
+	path {
+		fill: $grey-dark;
+	}
 }

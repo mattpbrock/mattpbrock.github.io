@@ -3,7 +3,7 @@
 body {
 	background: $color-bg-base;
 	color: $color-text-base;
-	font-family: $font-stack-serif;
+	font-family: $font-stack-serif-lora;
 	font-size: $font-size-base;
 	line-height: $font-line-height-base;
 	margin: 0;
@@ -15,14 +15,14 @@ body {
 }
 
 h1 {
-	font-family: $font-stack-sans-serif;
+	font-family: $font-stack-serif-abril;
 	font-size: 2em;
 	font-weight: 300;
 }
 
 a {
 	text-decoration: none;
-	color: #678ACE;
+	color: $color-link-base;
 }
 
 a:hover {

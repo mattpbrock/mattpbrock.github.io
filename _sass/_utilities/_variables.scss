@@ -2,18 +2,25 @@
 ================================================== */
 
 $white: #fdfdfd;
+$black: #292F2F;
+$grey-light: #323232;
 $grey-dark: #323232;
 $havelock-blue: #54A4DB;
 
 $color-bg-base: $white;
-$color-text-base: $grey-dark;
+$color-text-base: $black;
 $color-site-logo: $havelock-blue;
+$color-link-base: $havelock-blue;
 
 $font-size-sm: 18px;
 $font-size-base: 20px;
 $font-line-height-base: 1.4;
-$font-stack-serif: "Lora", Georgia, serif;
-$font-stack-sans-serif: "Oswald", "Helvetica", Arial, sans-serif;
+$font-stack-serif-lora: "Lora", Georgia, serif;
+$font-stack-serif-abril: "Abril Fatface", Georgia, serif;
+$font-stack-serif-sspro: "Source Serif Pro", Georgia, serif;
+$font-stack-sans-serif-oswald: "Oswald", "Helvetica", Arial, sans-serif;
+$font-stack-sans-serif-roboto: "Roboto", "Helvetica", Arial, sans-serif;
+$font-stack-oleo-script: "Oleo Script", Georgia, cursive;
 
 // breakpoints
 $brkpoint-small: 400px;
