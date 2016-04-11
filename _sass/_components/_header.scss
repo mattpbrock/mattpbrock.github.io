@@ -2,24 +2,39 @@
 ================================================== */
 
 header {
-	transform: translateY(-7px);
+	height: 55px;
+	overflow-y: hidden;
 	background: $color-header-bg-base;
+	padding: 0 2em;
+	box-shadow: inset 0 -4px 6px -4px rgba(0, 0, 0, 0.35);
+	transform: translateY(-7px);
+	text-align: center;
 }
 
 .logo {
-	
-	&__wrapper {
-		width: 100%;
-		margin: 0 auto;
-		text-align: center;
-		box-shadow: inset 0 -4px 6px -4px rgba(0, 0, 0, 0.35);
-		height: 55px;
-		overflow-y: hidden;
-	}
 	
 	width: 100px;
 	
 	path {
 		fill: $color-bg-base; // to blend into page
+	}
+}
+	
+.nav {
+// 	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+	&__item {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 1em;
+		
+		a {
+			color: $white;
+		}
 	}
 }

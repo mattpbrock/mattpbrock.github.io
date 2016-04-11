@@ -1,5 +1,29 @@
 <header>
-	<div class="logo__wrapper">
+<!--
+	<div class="wrapper">
 		{% include logo.html %}
 	</div>
+-->
+	
+  <nav role="navigation">
+    <ul class="nav">
+	    <li class="nav__item">
+	    	<a href="/about" title="About Matt Brock">About</a>
+	    </li>
+	    <li class="nav__item">
+	    	<a href="/music" title="Matt Brock Music">Music</a>
+	    </li>
+	    <li class="nav__item">
+	    	<a href="/" title="Matt Brock">
+		    	{% include logo.html %}
+	    	</a>
+	    </li>
+	    <li class="nav__item">
+	    	<a href="/photo" title="Matt Brock Photo">Photo</a>
+	    </li>
+	    <li class="nav__item">
+	    	<a href="/build" title="Matt Brock Build">Build</a>
+	    </li>
+    </ul>
+  </nav>
 </header>
