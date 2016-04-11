@@ -1,0 +1,25 @@
+/* # Site Header Styles
+================================================== */
+
+header {
+	transform: translateY(-7px);
+	background: $color-header-bg-base;
+}
+
+.logo {
+	
+	&__wrapper {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		box-shadow: inset 0 -4px 6px -4px rgba(0, 0, 0, 0.35);
+		height: 55px;
+		overflow-y: hidden;
+	}
+	
+	width: 100px;
+	
+	path {
+		fill: $color-bg-base; // to blend into page
+	}
+}

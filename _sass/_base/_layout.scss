@@ -1,18 +1,18 @@
 
 
+.page__banner {
+	width: $content-width-base;
+	max-width: $content-width-max;
+}
+
 .content {
-	max-width: 600px;
+	max-width: $content-width-max;
 	margin: 4em auto 0;
 	padding: 0 2em;
 	
 	@include mq(mobile) {
 		margin-top: 3em;
 	}
-}
-
-.site__intro {
-	font-size: 40px;
-	font-family: $font-stack-sans-serif-roboto;
 }
 
 .social {

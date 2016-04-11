@@ -5,15 +5,17 @@ $white: #fdfdfd;
 $black: #292F2F;
 $grey-light: #323232;
 $grey-dark: #323232;
-$havelock-blue: #54A4DB;
+$blue-havelock: #54A4DB;
+$blue-danube: #589FD0;
 
 $color-bg-base: $white;
 $color-text-base: $black;
-$color-site-logo: $havelock-blue;
-$color-link-base: $havelock-blue;
+$color-header-bg-base: $blue-danube;
+$color-site-logo: $blue-danube;
+$color-link-base: $blue-danube;
 
-$font-size-sm: 18px;
-$font-size-base: 20px;
+$font-size-sm: 16px;
+$font-size-base: 18px;
 $font-line-height-base: 1.4;
 $font-stack-serif-lora: "Lora", Georgia, serif;
 $font-stack-serif-abril: "Abril Fatface", Georgia, serif;
@@ -21,6 +23,10 @@ $font-stack-serif-sspro: "Source Serif Pro", Georgia, serif;
 $font-stack-sans-serif-oswald: "Oswald", "Helvetica", Arial, sans-serif;
 $font-stack-sans-serif-roboto: "Roboto", "Helvetica", Arial, sans-serif;
 $font-stack-oleo-script: "Oleo Script", Georgia, cursive;
+
+// standard widths
+$content-width-base: 100%;
+$content-width-max: 600px;
 
 // breakpoints
 $brkpoint-small: 400px;
