@@ -7,16 +7,30 @@ header {
 	background: $color-header-bg-base;
 	padding: 0 2em;
 	box-shadow: inset 0 -4px 6px -4px rgba(0, 0, 0, 0.35);
-	transform: translateY(-10px);
 	text-align: center;
 	line-height: 1;
 	color: $color-bg-base;
+	
+	&.alt {
+		background: $color-bg-base;
+		border-top: 5px solid $color-header-alt-border-base;
+		border-bottom: 5px solid $color-header-alt-border-base;
+		box-shadow: none;
+		color: $color-link-base;
+	}
 }
 
 .logo {
+	display: inline-block;
 	font-family: $font-stack-oleo-script;
-	font-size: 60px;
-	text-decoration: none;
+	font-size: 64px;
+	text-decoration: none !important;
+	text-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+	transform: translateY(-5px);
+	
+	header.alt & {
+		text-shadow: none;
+	}
 }
 
 nav {
@@ -32,12 +46,14 @@ nav {
 		list-style: none;
 		
 		&__item {
-			display: inline-block;
-			vertical-align: middle;
 			padding: 0 1em;
 			
 			a {
 				color: $white;
+				
+				header.alt & {
+					color: $color-link-base;
+				}
 			}
 		}
 	}
