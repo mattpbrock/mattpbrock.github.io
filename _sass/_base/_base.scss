@@ -3,8 +3,9 @@
 body {
 	background: $color-bg-base;
 	color: $color-text-base;
-	font-family: $font-stack-serif-lora;
+	font-family: $font-stack-serif-freight;
 	font-size: $font-size-base;
+	font-weight: $font-weight-base;
 	line-height: $font-line-height-base;
 	margin: 0;
 	padding: 0;
@@ -15,9 +16,10 @@ body {
 }
 
 h1 {
-	font-family: $font-stack-serif-abril;
-	font-size: 2em;
-	font-weight: 300;
+	font-family: $font-stack-sans-serif-acumin;
+	font-size: 2.5em;
+	font-weight: 100;
+	letter-spacing: -1px;
 }
 
 a {
@@ -30,8 +32,9 @@ a:hover {
 }
 
 .site__intro {
-	font-size: 40px;
-	font-family: $font-stack-sans-serif-roboto;
+	font-size: 64px;
+	font-family: $font-stack-sans-serif-acumin;
+	font-weight: 100;
 }
 
 .social {
