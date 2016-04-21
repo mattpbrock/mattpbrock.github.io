@@ -19,6 +19,18 @@ header {
 		box-shadow: none;
 		color: $color-link-base;
 	}
+	
+	.logo {
+		display: inline-block;
+		font-family: $font-stack-oleo-script;
+		font-size: 64px;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+		color: $color-bg-base;
+		transform: translateY(-5px);
+		&:hover { text-decoration: none; }
+		
+		header.alt & { text-shadow: none; }
+	}
 }
 
 nav {
@@ -40,20 +52,6 @@ nav {
 				font-family: $font-stack-sans-serif-acumin;
 				font-weight: $font-weight-thin;
 				color: $white;
-
-				&.logo {
-					display: inline-block;
-					font-family: $font-stack-oleo-script;
-					font-size: 64px;
-					text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-					transform: translateY(-5px);
-					&:hover { text-decoration: none; }
-					
-					header.alt & { text-shadow: none; }
-				}
-				
-				header.alt & { color: $color-link-base; }
-				
 			}
 		}
 	}
