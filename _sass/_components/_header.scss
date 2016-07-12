@@ -7,34 +7,16 @@ header {
 	border-bottom: 1px solid #f7f7f7;
 	background: #fff;
 	
-	&.alt-2 {
-		position: relative;
-		top: 0;
-		left: 8px;
-		width: 10em;
-		height: 10em;
-		background: $color-header-bg-base;
-		color: $color-bg-base;
-	}
-	
-	&.alt {
-		background: $color-bg-base;
-		border-top: 5px solid $color-header-alt-border-base;
-		border-bottom: 5px solid $color-header-alt-border-base;
-		box-shadow: none;
-		color: $color-link-base;
-	}
-	
 	.logo {
 		display: inline-block;
 		padding: em(9);
     font-family: $font-stack-sans-serif-acumin;
-    font-size: em(25.888);
+    font-family: $font-stack-serif-lora;
+    font-family: $font-stack-sans-serif-roboto;
+    font-family: $font-stack-serif-yrsa;
+    font-size: em(35.777 /* 25.888 + 9.889 */);
     transform-origin: top;
-    text-transform: uppercase;
 		&:hover { text-decoration: none; }
-		
-		header.alt & { text-shadow: none; }
 	}
 }
 
@@ -55,7 +37,7 @@ nav {
 				display: inline-block;
 		    color: $color-text-base;
 				padding: em(9) em(16);
-// 				font-family: $font-stack-sans-serif-acumin;
+				font-family: $font-stack-sans-serif-acumin;
 				font-weight: $font-weight-thin;
 			}
 		}
