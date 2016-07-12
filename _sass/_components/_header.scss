@@ -2,13 +2,20 @@
 ================================================== */
 
 header {
-	position: relative;
-	top: 0;
-	left: 8px;
-	width: 10em;
-	height: 10em;
-	background: $color-header-bg-base;
-	color: $color-bg-base;
+	text-align: center;
+	padding-bottom: em(16) 0;
+	border-bottom: 1px solid #f7f7f7;
+	background: #fff;
+	
+	&.alt-2 {
+		position: relative;
+		top: 0;
+		left: 8px;
+		width: 10em;
+		height: 10em;
+		background: $color-header-bg-base;
+		color: $color-bg-base;
+	}
 	
 	&.alt {
 		background: $color-bg-base;
@@ -19,15 +26,12 @@ header {
 	}
 	
 	.logo {
-    position: absolute;
-    bottom: 0;
-    left: 15px;
-    display: block;
-    font-family: $font-stack-oleo-script;
-    font-size: 64px;
-    color: #fdfdfd;
+		display: inline-block;
+		padding: em(9);
+    font-family: $font-stack-sans-serif-acumin;
+    font-size: em(25.888);
     transform-origin: top;
-    @include transform(rotate(90deg));
+    text-transform: uppercase;
 		&:hover { text-decoration: none; }
 		
 		header.alt & { text-shadow: none; }
@@ -35,9 +39,6 @@ header {
 }
 
 nav {
-	position: absolute;
-	bottom: 0;
-	right: 0;
 	
 	.nav {
 		height: 100%;
@@ -49,12 +50,13 @@ nav {
 			display: inline-block;
 			vertical-align: middle;
 			margin-top: -5px;
-			padding: 0 1em;
 			
 			a {
-				font-family: $font-stack-sans-serif-acumin;
+				display: inline-block;
+		    color: $color-text-base;
+				padding: em(9) em(16);
+// 				font-family: $font-stack-sans-serif-acumin;
 				font-weight: $font-weight-thin;
-				color: $white;
 			}
 		}
 	}
