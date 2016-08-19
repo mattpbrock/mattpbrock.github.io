@@ -4,20 +4,20 @@ body {
 	background: $color-bg-base;
 	color: $color-text-base;
 	font-family: $font-stack-serif-yrsa;
-	font-size: $font-size-base;
+	font-size: em($font-size-base);
 	font-weight: $font-weight-base;
 	line-height: $font-line-height-base;
 	margin: 0;
 	padding: 0;
 	
 	@include mq(mobile) {
-		font-size: $font-size-sm;
+		font-size: em($font-size-sm);
 	}
 }
 
 h1 {
 	font-family: $font-stack-sans-serif-acumin;
-	font-size: 2.5em;
+	font-size: em(41.9px);
 	font-weight: 100;
 	letter-spacing: -1px;
 }
@@ -32,7 +32,7 @@ a:hover {
 }
 
 .site__intro {
-	font-size: 64px;
+	font-size: em(67.773) - em(25.888);
 	font-family: $font-stack-serif-abril;
 	font-weight: 100;
 }

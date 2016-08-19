@@ -3,13 +3,13 @@
 
 header {
 	text-align: center;
-	padding-bottom: em(16) 0;
 	border-bottom: 1px solid #f7f7f7;
 	background: #fff;
 	
 	.logo {
 		display: inline-block;
-		padding: em(9);
+		margin-bottom: em(3.8px);
+		padding: em(1.4px);
     font-family: $font-stack-sans-serif-acumin;
     font-family: $font-stack-serif-lora;
     font-family: $font-stack-sans-serif-roboto;
@@ -31,7 +31,14 @@ nav {
 		&__item {
 			display: inline-block;
 			vertical-align: middle;
-			margin-top: -5px;
+			box-sizing: border-box;
+			border: 1px solid transparent;
+			
+			&--active {
+				background: $white;
+				border: 1px solid #f7f7f7;
+				border-bottom: none;
+			}
 			
 			a {
 				display: inline-block;
