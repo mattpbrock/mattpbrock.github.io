@@ -1,15 +1,34 @@
 ---
-layout: default
+<!-- layout: default -->
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post__header header--post">
-    <h1 class="post__title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post__meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
+{% include head.html %}
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+<main>
+	<div class="content">
+		
+		<a href="/write" title="Return to posts">Return to posts</a>
+		
+		<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+		
+		  <header class="post__header header--post">
+		    <h1 class="post__title" itemprop="name headline">{{ page.title }}</h1>
+		    <h5 class="post__meta">
+			    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+			    {% if page.author %}
+			    	• <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+			    			<span itemprop="name">{{ page.author }}</span>
+			    		</span>
+			    {% endif %}
+			  </h5>
+		  </header>
+			
+		  <div class="post-content" itemprop="articleBody">
+		    {{ content }}
+		  </div>
+		
+		</article>
+	</div>
+</main>
 
-</article>
+{% include footer.html %}

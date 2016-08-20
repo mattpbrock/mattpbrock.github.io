@@ -8,7 +8,7 @@ header {
 	.logo {
 		display: inline-block;
 		margin-bottom: em(3.8px);
-		padding: em(1.4px);
+		padding: em(3.8px);
     font-family: $font-stack-sans-serif-acumin;
     font-family: $font-stack-serif-lora;
     font-family: $font-stack-sans-serif-roboto;
@@ -22,7 +22,7 @@ header {
 .header {
 	
 	&--site {
-		border-top: 1px solid $white-dim;
+		border-top: 1px solid $color-nav-border;
 		background: #fff;
 	}
 	
@@ -43,20 +43,22 @@ nav {
 			flex: 1;
 			
 			&--spacer {
+				@include mq(mobile) { display: none; }
 				flex: 3;
 				@extend %nav__item;
 			}
 			
 			&--active {
 				background: $color-bg-base;
-				border: 1px solid $white-dim;
+				border: 1px solid $color-nav-border;
 				border-bottom: none;
 			}
 			
 			a {
+				@include mq(mobile) { padding: em(9.9px) em(16px); }
 				display: inline-block;
 		    color: $color-text-base;
-				padding: em(9) em(16);
+				padding: em(9.9px) em(25.9px);
 				font-family: $font-stack-sans-serif-acumin;
 				font-weight: $font-weight-thin;
 			}

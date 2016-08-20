@@ -1,6 +1,8 @@
 
 
 body {
+	@include mq(mobile) { font-size: em($font-size-sm); }
+	@include mq(small) { font-size: em($font-size-xs); }
 	background: $color-bg-base;
 	color: $color-text-base;
 	font-family: $font-stack-serif-yrsa;
@@ -9,17 +11,6 @@ body {
 	line-height: $font-line-height-base;
 	margin: 0;
 	padding: 0;
-	
-	@include mq(mobile) {
-		font-size: em($font-size-sm);
-	}
-}
-
-h1 {
-	font-family: $font-stack-sans-serif-acumin;
-	font-size: em(41.9px);
-	font-weight: 100;
-	letter-spacing: -1px;
 }
 
 a {
@@ -29,6 +20,11 @@ a {
 
 a:hover {
 	text-decoration: underline;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
 }
 
 .site__intro {

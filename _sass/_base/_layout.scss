@@ -15,13 +15,10 @@ main {
 }
 
 .content {
+	@include mq(mobile) { padding: 0 em(16px); }
 	max-width: $content-width-max;
 	margin: 0 auto;
-	padding: 0 2em;
-	
-	@include mq(mobile) {
-		margin-top: 3em;
-	}
+	padding: 0 em(25.9px);
 }
 
 .social {

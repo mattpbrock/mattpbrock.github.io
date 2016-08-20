@@ -1,4 +1,4 @@
-/* # Variables
+/* # Typographical Styles
 ================================================== */
 
 /*
@@ -20,7 +20,24 @@
 0.9px
 */
 
-h1 { font-size: em(41.9px); }
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-stack-sans-serif-acumin;
+	font-weight: 100;
+}
+
+h1, h2, h3, h4 {
+	margin: em(3.8px) 0 em(9.9px);
+}
+
+h5, h6 {
+	margin: em(1.4px) 0 em(6.1px);
+}
+
+h1 {
+	font-size: em(41.9px);
+	letter-spacing: em(-1px);
+}
+
 h2 { font-size: em(25.9px); }
 h3 { font-size: em(25.9px); }
 h4 { font-size: em(25.9px); }
