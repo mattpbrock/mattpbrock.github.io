@@ -1,16 +1,22 @@
 /* # Variables
 ================================================== */
 
-$white: #fdfdfd;
+$white: #fff;
+$white-dim: #f7f7f7;
+
 $black: #292F2F;
 $grey-light: #323232;
 $grey-dark: #323232;
-$blue-havelock: #54A4DB;
 $blue-danube: #589FD0;
 
-$color-bg-base: $white;
+$shamrock: #28cc99;
+$burnt-sienna: #e86d4c;
+$raw-sienna-transparent: rgba(208,110,69,.01);
+$danube: #589FD0;
+
+$color-bg-base: $raw-sienna-transparent;
 $color-text-base: $black;
-$color-header-bg-base: $blue-danube;
+$color-header-bg-base: $white;
 $color-header-alt-border-base: $blue-danube;
 $color-site-logo: $blue-danube;
 $color-link-base: $blue-danube;

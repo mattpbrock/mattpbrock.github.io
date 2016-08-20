@@ -1,6 +1,10 @@
 /* # Site Layout Styles
 ================================================== */
 
+main {
+	padding: em(41.9px) 0;
+}
+
 .wrapper {
 	margin: 0 auto;
 }
@@ -12,7 +16,7 @@
 
 .content {
 	max-width: $content-width-max;
-	margin: em(41.9px) auto 0;
+	margin: 0 auto;
 	padding: 0 2em;
 	
 	@include mq(mobile) {
