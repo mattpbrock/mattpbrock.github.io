@@ -1,4 +1,8 @@
 
+html, body {
+	height: 100%;
+	width: 100%;
+}
 
 body {
 	@include mq(mobile) { font-size: em($font-size-sm); }
@@ -11,6 +15,10 @@ body {
 	line-height: $font-line-height-base;
 	margin: 0;
 	padding: 0;
+	
+	&.home {
+		background: url('#{$path--rel-img}/home-bg-2330px.jpg') no-repeat center center / cover;
+	}
 }
 
 a {
@@ -28,9 +36,18 @@ img {
 }
 
 .site__intro {
-	font-size: em(67.773) - em(25.888);
+	padding-top: 16%;
+	font-size: em(35.8px);
 	font-family: $font-stack-serif-abril;
 	font-weight: 100;
+	@include mq(mobile) { font-size: em(32px) }
+	
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 752px;
+	padding: 0 3%;
+	background: rgba(255,255,255,.74);
 }
 
 .social {
