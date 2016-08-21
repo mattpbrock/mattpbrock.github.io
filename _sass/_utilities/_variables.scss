@@ -39,6 +39,11 @@ $font-stack-sans-serif-acumin: "acumin-pro-semi-condensed", "Helvetica", Arial, 
 $font-stack-sans-serif-roboto: "Roboto", "Helvetica", Arial, sans-serif;
 $font-stack-oleo-script: "Oleo Script", Georgia, cursive;
 
+// misc
+
+$heading-skew: 6.1deg;
+
+
 // standard widths
 $content-width-base: 100%;
 $content-width-max: 752px; // 600px
@@ -47,6 +52,7 @@ $content-width-max: 752px; // 600px
 $brkpoint-small: 400px;
 $brkpoint-mobile: 568px;
 $brkpoint-tablet: 768px;
+$brkpoint-laptop: 1024px;
 $brkpoint-desktop: 1200px;
 
 // images

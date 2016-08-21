@@ -17,6 +17,7 @@ body {
 	padding: 0;
 	
 	&.home {
+		overflow: hidden;
 		background: url('#{$path--rel-img}/home-bg-2330px.jpg') no-repeat center center / cover;
 	}
 }
@@ -36,18 +37,50 @@ img {
 }
 
 .site__intro {
-	padding-top: 16%;
 	font-size: em(35.8px);
 	font-family: $font-stack-serif-abril;
 	font-weight: 100;
-	@include mq(mobile) { font-size: em(32px) }
+	@include mq(laptop) { font-size: em(29.7px); }
+	@include mq(mobile) { font-size: em(23.6px); }
+	@include mq(small) { font-size: em(19.8px); }
 	
 	position: absolute;
-	top: 50%;
+	top: 45.7%;
 	left: 0;
-	width: 752px;
-	padding: 0 3%;
+	width: 61.8%; // 1/1.618
+	max-width: 752px;
+	padding: 0 em(25.9px);
 	background: rgba(255,255,255,.74);
+	border-left: none;
+	@include transform(skew($heading-skew));
+	
+	&::before {
+		content: "";
+		width: em(41.9px);
+		background: rgba(255, 255, 255, 0.74);
+		position: absolute;
+		top: 0;
+		left: em(-41.9px);
+		height: 100%;
+	}
+	
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: em(6.1px);
+		height: 100%;
+// 		background: rgba(178,47,31,.8);
+// 		background: rgba(239,79,25,0.8);
+// 		background: rgba(76,206,141,0.9);
+		background: #000;
+		transform: skew(-$heading-skew);
+	}
+	
+	p {
+		@include transform(skew(-$heading-skew));
+	}
 }
 
 .social {
