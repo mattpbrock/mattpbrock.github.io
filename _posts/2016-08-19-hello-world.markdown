@@ -3,6 +3,7 @@ layout: post
 title:  "Hello World"
 date:   2016-08-19 20:27 -0600
 categories: general
+preview: Well, here we are. Just sitting up late tonight after finishing a chapter of The Lord of The Rings. I feel like coding. It seems the fair mist waters of Lothlórien are washing over me, and I am thus stricken to pour forth the hidden substance of my soul.
 ---
 
 Well, here we are. Just sitting up late tonight after finishing a chapter of The Lord of The Rings. I feel like coding. It seems the fair mist waters of Lothlórien are washing over me, and I am thus stricken to pour forth the hidden substance of my soul.
