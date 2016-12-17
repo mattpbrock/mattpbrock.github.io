@@ -8,10 +8,12 @@ header {
 	.logo {
 		display: inline-block;
 		margin-bottom: em(3.8px);
-		padding: em(3.8px);
+		padding: em(5.7px);
+/*
     font-family: $font-stack-sans-serif-acumin;
     font-family: $font-stack-serif-lora;
     font-family: $font-stack-sans-serif-roboto;
+*/
     font-family: $font-stack-serif-yrsa;
     font-size: em(35.777 /* 25.888 + 9.889 */);
     transform-origin: top;
@@ -22,8 +24,13 @@ header {
 .header {
 	
 	&--site {
-		border-top: 1px solid $color-nav-border;
+		border-top: 3.16 * em($nav-border-width) solid $color-nav-border;
 		background: #fff;
+		
+		.p--music & { border-top-color: red; }
+		.p--photo & { border-top-color: blue; }
+		.p--build & { border-top-color: green; }
+		.p--write & { border-top-color: yellow; }
 	}
 	
 }
@@ -50,15 +57,17 @@ nav {
 			
 			&--active {
 				background: $color-bg-base;
-				border: 1px solid $color-nav-border;
+				border: em($nav-border-width) solid $color-nav-border;
 				border-bottom: none;
+				
+// 				a { padding: em($nav-link-pad-y) em($nav-link-pad-x - 2 * $nav-border-width) !important; }
 			}
 			
 			a {
-				@include mq(mobile) { padding: em(9.9px) em(16px); }
+				@include mq(mobile) { padding: em($nav-link-pad-y) em($nav-link-pad-x--sm); }
 				display: inline-block;
 		    color: $color-text-base;
-				padding: em(9.9px) em(25.9px);
+				padding: em($nav-link-pad-y) em($nav-link-pad-x);
 				font-family: $font-stack-sans-serif-acumin;
 				font-weight: $font-weight-thin;
 			}

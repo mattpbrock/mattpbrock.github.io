@@ -52,6 +52,8 @@ img {
 	padding: 0 em(25.9px);
 	background: rgba(255,255,255,.74);
 	border-left: none;
+  -webkit-backdrop-filter: saturate(180%) blur(12px); // thanks Apple!
+  backdrop-filter: saturate(180%) blur(12px);
 	@include transform(skew($heading-skew));
 	
 	&::before {

@@ -5,6 +5,13 @@
 	display: inline-block;
 	vertical-align: middle;
 	box-sizing: border-box;
-	border: 1px solid transparent;
-	border-bottom: 1px solid $color-nav-border;
+	border: em($nav-border-width) solid transparent;
+	border-bottom: em($nav-border-width) solid $color-nav-border;
+	border-left: 0;
+	border-right: 0;
+	
+	&:not(.nav__item--active) a {
+		border-right: em($nav-border-width) solid transparent;
+		border-left: em($nav-border-width) solid transparent;
+	}
 }
