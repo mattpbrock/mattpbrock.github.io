@@ -8,14 +8,15 @@ header {
 	.logo {
 		display: inline-block;
 		margin-bottom: em(3.8px);
-		padding: em(5.7px);
+		padding: em(16px);
 /*
     font-family: $font-stack-sans-serif-acumin;
     font-family: $font-stack-serif-lora;
     font-family: $font-stack-sans-serif-roboto;
 */
     font-family: $font-stack-serif-yrsa;
-    font-size: em(35.777 /* 25.888 + 9.889 */);
+    font-family: $font-stack-oleo-script;
+    font-size: em(25.9 /* 25.888 + 9.889 */);
     transform-origin: top;
 		&:hover { text-decoration: none; }
 	}
@@ -69,6 +70,7 @@ nav {
 		    color: $color-text-base;
 				padding: em($nav-link-pad-y) em($nav-link-pad-x);
 				font-family: $font-stack-sans-serif-acumin;
+				font-family: $font-stack-serif-yrsa;
 				font-weight: $font-weight-thin;
 			}
 		}
