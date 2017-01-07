@@ -11,8 +11,6 @@ $(document).ready(function(){
 				$(this).addClass('nav__item--active');
 			}
 		}
-		console.log(pagePath.split('/')[1]);
-		$('body').addClass('p--' + pagePath.split('/')[1]);
 	});
 	
 });

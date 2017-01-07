@@ -14,6 +14,16 @@ $burnt-sienna: #e86d4c;
 $raw-sienna-transparent: rgba(208,110,69,.01);
 $danube: #589FD0;
 
+// Solarized
+$sol_yellow:    #b58900;
+$sol_orange:    #cb4b16;
+$sol_red:       #dc322f;
+$sol_magenta:   #d33682;
+$sol_violet:    #6c71c4;
+$sol_blue:      #268bd2;
+$sol_cyan:      #2aa198;
+$sol_green:     #859900;
+
 $color-bg-base: $raw-sienna-transparent;
 $color-text-base: $black;
 $color-header-bg-base: $white;
@@ -46,7 +56,7 @@ $heading-skew: 6.1deg;
 
 // standard widths
 $content-width-base: 100%;
-$content-width-max: 752px; // 600px
+$content-width-max: 642px; // 600px
 
 // breakpoints
 $brkpoint-small: 400px;

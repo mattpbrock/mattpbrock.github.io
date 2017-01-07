@@ -24,13 +24,13 @@ header {
 .header {
 	
 	&--site {
-		border-top: 3.16 * em($nav-border-width) solid $color-nav-border;
+		border-top: 1.618/* 3.16 */ * em($nav-border-width) solid $color-nav-border;
 		background: #fff;
 		
-		.p--music & { border-top-color: red; }
-		.p--photo & { border-top-color: blue; }
-		.p--build & { border-top-color: green; }
-		.p--write & { border-top-color: yellow; }
+		.p--music & { border-top-color: $black; }
+		.p--photo & { border-top-color: $black; }
+		.p--build & { border-top-color: $black; }
+		.p--write & { border-top-color: $black; }
 	}
 	
 }
