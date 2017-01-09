@@ -1,6 +1,8 @@
 /* # Typographical Styles
 ================================================== */
 
+// 16px @ 1.618
+
 /*
 1216.0px
 751.5px
@@ -20,7 +22,30 @@
 0.9px
 */
 
+// 12px @ 1.618
+
+/*
+1475.592px
+911.985px
+563.65px
+348.362px
+215.304px
+133.068px
+82.242px
+50.83px
+31.415px
+19.416px
+12px
+7.417px
+4.584px
+2.833px
+1.751px
+1.082px
+0.669px
+*/
+
 h1, h2, h3, h4, h5, h6 {
+/*
 	font-family: $font-stack-sans-serif-acumin;
 	font-family: $font-stack-sans-serif-roboto;
 	font-family: $font-stack-sans-serif-museo;
@@ -28,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $font-stack-serif-yrsa;
 	font-family: $font-stack-serif-abril;
 	font-family: $font-stack-serif-sspro;
+*/
 	font-family: $font-stack-oleo-script;
 	font-weight: 100;
 }
@@ -42,11 +68,11 @@ h5, h6 {
 
 h1 {
 	font-size: em(41.9px);
-	letter-spacing: em(-0.9px);
+// 	letter-spacing: em(-0.9px);
 }
 
-h2 { font-size: em(25.9px); }
+h2 { font-size: em(31.4px); }
 h3 { font-size: em(25.9px); }
-h4 { font-size: em(25.9px); }
-h5 { font-size: em(13.7px); }
-h6 { font-size: em(10px); }
+h4 { font-size: em(19.4px); }
+h5 { font-size: em(16px); }
+h6 { font-size: em(12px); }
