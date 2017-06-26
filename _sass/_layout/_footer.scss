@@ -1,0 +1,35 @@
+/* # Site Footer Styles
+================================================== */
+
+footer {
+	background: $white-dim;
+}
+
+.social {
+	
+	&__block {
+		padding: em(28px) 0;
+		text-align: center;
+	}
+	
+	&__heading {
+		text-decoration: underline;
+	}
+	
+	&__link {
+		display: inline-block;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	
+	&__icon {
+		width: 40px;
+		opacity: 0.8;
+		
+		&:hover {
+			opacity: 1;
+		}
+	}
+	
+}

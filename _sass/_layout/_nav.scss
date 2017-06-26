@@ -1,0 +1,42 @@
+/* # Site Nav Styles
+================================================== */
+
+nav {
+	
+	.nav {
+		display: flex;
+		justify-content: center;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		
+		&__item {
+			@extend %nav__item;
+			flex: 1;
+			
+			&--spacer {
+				@include mq(mobile) { display: none; }
+				flex: 3;
+				@extend %nav__item;
+			}
+			
+			&--active {
+				background: $color-bg-base;
+				border: em($nav-border-width) solid $color-nav-border;
+				border-bottom: none;
+				
+// 				a { padding: em($nav-link-pad-y) em($nav-link-pad-x - 2 * $nav-border-width) !important; }
+			}
+			
+			a {
+				@include mq(mobile) { padding: em($nav-link-pad-y) em($nav-link-pad-x--sm); }
+				display: inline-block;
+		    color: $color-text-base;
+				padding: em($nav-link-pad-y) em($nav-link-pad-x);
+				font-family: $font-stack-serif-yrsa;
+				font-weight: $font-weight-thin;
+			}
+		}
+	}
+}

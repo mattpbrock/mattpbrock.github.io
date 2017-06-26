@@ -2,14 +2,9 @@
 ================================================== */
 
 main {
-	padding: em(41.9px) 0;
+	padding: em(42px) 0;
 	transform-style: preserve-3d;
-	animation-name: content-fade-in;
-	animation-duration: 212ms;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-out;
-	animation-fill-mode: forwards;
-	animation-delay: 0s;
+	@include animation(content-fade-in 110ms ease-out 0ms 1 forwards);
 }
 
 .wrapper {
@@ -19,20 +14,12 @@ main {
 .page__banner {
 	width: $content-width-base;
 	max-width: $content-width-max;
+	margin-bottom: em(16px);
 }
 
 .content {
 	@include mq(mobile) { padding: 0 em(16px); }
 	max-width: $content-width-max;
 	margin: 0 auto;
-	padding: 0 em(25.9px);
-}
-
-.social {
-	
-	&__block {
-		margin: 2em auto;
-		padding: 0 2em;
-		text-align: center;
-	}
+	padding: 0 em(26px);
 }

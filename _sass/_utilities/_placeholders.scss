@@ -7,8 +7,8 @@
 	box-sizing: border-box;
 	border: em($nav-border-width) solid transparent;
 	border-bottom: em($nav-border-width) solid $color-nav-border;
-	border-left: 0;
-	border-right: 0;
+	border-left-color: transparent;
+	border-right-color: transparent;
 	
 	&:not(.nav__item--active) a {
 		border-right: em($nav-border-width) solid transparent;

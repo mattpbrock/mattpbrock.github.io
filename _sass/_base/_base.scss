@@ -1,13 +1,14 @@
+/* # Base Styles
+================================================== */
 
-html, body {
-	height: 100%;
-	width: 100%;
+html {
+	background: $white-dim; // to match footer
 }
 
 body {
 	@include mq(mobile) { font-size: em($font-size-sm); }
 	@include mq(small) { font-size: em($font-size-xs); }
-	background: $color-bg-base;
+	background: $white;
 	color: $color-text-base;
 	font-family: $font-stack-serif-yrsa;
 	font-size: em($font-size-base);
@@ -15,11 +16,19 @@ body {
 	line-height: $font-line-height-base;
 	margin: 0;
 	padding: 0;
+	border-top: 1.618 * em($nav-border-width) solid $black;
 	
 	&.home {
+		border: 0;
 		overflow: hidden;
 		background: url('#{$path--rel-img}/home-bg-2330px.jpg') no-repeat center center / cover;
 	}
+}
+
+* { box-sizing: border-box; }
+
+main {
+	background: $color-bg-base;
 }
 
 a {
@@ -31,80 +40,28 @@ a:hover {
 	text-decoration: underline;
 }
 
+figure {
+	margin: 0 0 em(21px);
+	
+	img {
+		display: block;
+		margin: 0 !important;
+	}
+	
+	figcaption {
+		font-size: em(10px);
+		margin: em(6px) em(6px) 0 0;
+		color: $grey-light;
+		font-style: italic;
+		text-align: right;
+	}
+}
+
 img {
 	width: 100%;
 	max-width: 100%;
 }
 
-.site__intro {
-	font-size: em(35.8px);
-	font-family: $font-stack-serif-abril;
-	font-weight: 100;
-	@include mq(laptop) { font-size: em(29.7px); }
-	@include mq(mobile) { font-size: em(23.6px); }
-	@include mq(small) { font-size: em(19.8px); }
-	
-	position: absolute;
-	top: 45.7%;
-	left: 0;
-	width: 61.8%; // 1/1.618
-	max-width: 752px;
-	padding: 0 em(25.9px);
-	background: rgba(255,255,255,.74);
-	border-left: none;
-  -webkit-backdrop-filter: saturate(180%) blur(12px); // thanks Apple!
-  backdrop-filter: saturate(180%) blur(12px);
-	@include transform(skew($heading-skew));
-	
-	&::before {
-		content: "";
-		width: em(41.9px);
-		background: rgba(255, 255, 255, 0.74);
-		position: absolute;
-		top: 0;
-		left: em(-41.9px);
-		height: 100%;
-	}
-	
-	&::after {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: em(6.1px);
-		height: 100%;
-// 		background: rgba(178,47,31,.8);
-// 		background: rgba(239,79,25,0.8);
-// 		background: rgba(76,206,141,0.9);
-		background: #000;
-		transform: skew(-$heading-skew);
-	}
-	
-	p {
-		@include transform(skew(-$heading-skew));
-	}
-}
-
 ul {
 	list-style: none;
-}
-
-.social {
-	
-	&__link {
-		display: inline-block;
-		&:hover {
-			text-decoration: none;
-		}
-	}
-	
-	&__icon {
-		width: 40px;
-		opacity: 0.8;
-		
-		&:hover {
-			opacity: 1;
-		}
-	}
-	
 }
