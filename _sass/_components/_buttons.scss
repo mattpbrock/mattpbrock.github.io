@@ -1,0 +1,36 @@
+/* # Button Styles
+================================================== */
+
+.button {
+	display: inline-block;
+	font-family: $font-stack-economica;
+	font-size: em(12px);
+	margin: 0 0 em(21px);
+	padding: em(12px) em(28px) em(11px);
+	background: $shamrock;
+	color: $white-dim;
+	border-radius: em(3.8px);
+	text-transform: uppercase;
+	letter-spacing: em(.9px);
+	@include transition(all $transition-base);
+	
+	&:hover {
+		text-decoration: none;
+		background: darken($shamrock, 2.8%);
+		color: $white;
+	}
+	
+	&:active {
+		background: darken($shamrock, 6%);
+		color: $white;
+	}
+	
+	@include m(booking) {
+		@extend .button;
+	}
+	
+	.cta & {
+		margin: 0;
+	}
+	
+}

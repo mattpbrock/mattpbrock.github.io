@@ -5,12 +5,6 @@
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-<!--
-	<script src="https://use.typekit.net/dqt3esb.js"></script>
-	<script>try{Typekit.load({ async: false });}catch(e){}</script>
--->
-	
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
@@ -18,8 +12,10 @@
   {% if page.layout == 'home' %}
   	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
   {% else %}
-  	<link href="https://fonts.googleapis.com/css?family=Oleo+Script|Yrsa:300" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Oleo+Script|Yrsa:300|Economica:400,700" rel="stylesheet">
   {% endif %}
+  
+	<script src="https://use.fontawesome.com/0985a9b011.js"></script>
   
   {% include analytics.html %}
 </head>

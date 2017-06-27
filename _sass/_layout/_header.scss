@@ -2,20 +2,13 @@
 ================================================== */
 
 header {
-	
 	text-align: center;
 	
 	.logo {
 		display: inline-block;
 		margin-bottom: em(3.8px);
-		padding: em(16px);
-/*
-    font-family: $font-stack-sans-serif-acumin;
-    font-family: $font-stack-serif-lora;
-    font-family: $font-stack-sans-serif-roboto;
-*/
-    font-family: $font-stack-serif-yrsa;
-    font-family: $font-stack-oleo-script;
+		padding: em(9px) 0;
+    font-family: $font-stack-economica;
     font-size: em(25.9 /* 25.888 + 9.889 */);
     transform-origin: top;
 		&:hover { text-decoration: none; }

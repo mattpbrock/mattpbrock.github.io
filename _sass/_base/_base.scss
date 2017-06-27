@@ -2,6 +2,8 @@
 ================================================== */
 
 html {
+	height: 100%;
+	width: 100%;
 	background: $white-dim; // to match footer
 }
 
@@ -19,9 +21,10 @@ body {
 	border-top: 1.618 * em($nav-border-width) solid $black;
 	
 	&.home {
+		height: 100%;
 		border: 0;
 		overflow: hidden;
-		background: url('#{$path--rel-img}/home-bg-2330px.jpg') no-repeat center center / cover;
+		background: url('#{$path--rel-img}/home-bg-2160px.jpg') no-repeat center center / cover;
 	}
 }
 
@@ -34,6 +37,7 @@ main {
 a {
 	text-decoration: none;
 	color: $color-link-base;
+	@include transition(all $transition-base);
 }
 
 a:hover {

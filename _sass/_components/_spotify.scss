@@ -1,0 +1,16 @@
+/* # Spotify Embed Styles
+================================================== */
+
+.spotify {
+	
+	&-player {
+		width: 100%;
+		margin-bottom: em(21px);
+	}
+	
+	&-follower-count {
+		margin: 0 auto;
+		width: 136px;
+		display: block;
+	}
+}

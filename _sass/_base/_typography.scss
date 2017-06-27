@@ -45,17 +45,9 @@
 */
 
 h1, h2, h3, h4, h5, h6 {
-/*
-	font-family: $font-stack-sans-serif-acumin;
-	font-family: $font-stack-sans-serif-roboto;
-	font-family: $font-stack-sans-serif-museo;
-	font-family: $font-stack-serif-lora;
-	font-family: $font-stack-serif-yrsa;
-	font-family: $font-stack-serif-abril;
-	font-family: $font-stack-serif-sspro;
-*/
 	font-family: $font-stack-oleo-script;
-	font-weight: 100;
+	font-family: $font-stack-economica;
+	font-weight: $font-weight-bold;
 }
 
 h1, h2, h3, h4 {

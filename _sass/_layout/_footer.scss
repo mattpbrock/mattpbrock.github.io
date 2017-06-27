@@ -3,12 +3,13 @@
 
 footer {
 	background: $white-dim;
+	padding: em(21px) 0 em(34px);
 }
 
 .social {
 	
 	&__block {
-		padding: em(28px) 0;
+		padding: em(12px) 0;
 		text-align: center;
 	}
 	
@@ -18,17 +19,20 @@ footer {
 	
 	&__link {
 		display: inline-block;
+		font-size: em(21px);
+		
 		&:hover {
 			text-decoration: none;
 		}
 	}
 	
 	&__icon {
-		width: 40px;
-		opacity: 0.8;
+		padding: em(6px);
+		color: lighten($color-text-base, 12%);
+		@include transition(color $transition-base);
 		
 		&:hover {
-			opacity: 1;
+			color: $color-text-base;
 		}
 	}
 	

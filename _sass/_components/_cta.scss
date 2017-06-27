@@ -1,0 +1,42 @@
+/* # Call-to-action Styles
+================================================== */
+
+.cta {
+	text-align: center;
+	margin: em(38px) 0;
+	padding: em(21px) 0 em(24.8px);
+	border: em(1.2px) solid $grey-xlt;
+	border-right: 0;
+	border-left: 0;
+	
+	:first-child {
+		margin-top: 0;
+	}
+	
+	@include e(heading) {
+		
+		.cta--alt & {
+			position: absolute;
+			top: em(-21px / 2);
+			right: 6%;
+			display: inline-block;
+			background: $raw-sienna-rgb-equiv;
+			padding: 0 6px;
+			font-size: em(21px);
+			line-height: 1;
+		}
+	}
+	
+	@include e(action) {
+		
+		.cta--alt & {
+			display: block;
+		}
+	}
+	
+	@include m(alt) {
+		@extend .cta;
+		position: relative;
+		padding: em(24.8px) calc(6% + 6px);
+	}
+}

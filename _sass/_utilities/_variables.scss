@@ -5,6 +5,7 @@ $white: #fff;
 $white-dim: #f5f5f5;
 
 $black: #292F2F;
+$grey-xlt: #e5e6e6;
 $grey-light: #aeafaf;
 $grey-dark: #323232;
 $blue-danube: #589FD0;
@@ -12,6 +13,7 @@ $blue-danube: #589FD0;
 $shamrock: #28cc99;
 $burnt-sienna: #e86d4c;
 $raw-sienna-transparent: rgba(208,110,69,.01);
+$raw-sienna-rgb-equiv: rgb(254, 253, 253);
 $danube: #589FD0;
 
 // Solarized
@@ -39,10 +41,11 @@ $font-size-base: 20px;
 $font-line-height-base: 1.3;
 $font-weight-base: 300;
 $font-weight-thin: 100;
-$font-weight-bold: 600;
+$font-weight-bold: 700;
 $font-stack-serif-yrsa: "Yrsa", Georgia, serif;
 $font-stack-serif-abril: "Abril Fatface", Georgia, serif;
 $font-stack-oleo-script: "Oleo Script", Georgia, cursive;
+$font-stack-economica: "Economica", "Helvetica Neue", Helvetica, sans-serif;
 
 // misc
 
@@ -68,3 +71,6 @@ $nav-link-pad-x--sm: 16px;
 $nav-link-pad-x: 25.9px;
 $nav-link-pad-y: 9.9px;
 $nav-border-width: 1.6px;
+
+//*	Transitions
+$transition-base: 51ms ease-out;
