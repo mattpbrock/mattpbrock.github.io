@@ -4,7 +4,11 @@
 nav {
 	
 	.nav {
-		display: flex;
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	  display: -ms-flexbox;      /* TWEENER - IE 10 */
+	  display: -webkit-flex;     /* NEW - Chrome */
+	  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 		justify-content: center;
 		height: 100%;
 		margin: 0;
@@ -13,12 +17,20 @@ nav {
 		
 		&__item {
 			@extend %nav__item;
-			flex: 1;
+			-webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+		  -moz-box-flex: 1;         /* OLD - Firefox 19- */
+		  -webkit-flex: 1;          /* Chrome */
+		  -ms-flex: 1;              /* IE 10 */
+		  flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
 			
 			&--spacer {
 				@include mq(mobile) { display: none; }
-				flex: 3;
 				@extend %nav__item;
+				-webkit-box-flex: 3;      /* OLD - iOS 6-, Safari 3.1-6 */
+			  -moz-box-flex: 3;         /* OLD - Firefox 19- */
+			  -webkit-flex: 3;          /* Chrome */
+			  -ms-flex: 3;              /* IE 10 */
+			  flex: 3;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
 			}
 			
 			&--active {
@@ -33,7 +45,7 @@ nav {
 				@include mq(mobile) { padding: em($nav-link-pad-y) em($nav-link-pad-x--sm); }
 				display: inline-block;
 		    color: $color-text-base;
-				padding: em($nav-link-pad-y) em($nav-link-pad-x);
+				padding: em($nav-link-pad-y) em($nav-link-pad-x) em($nav-link-pad-y - 1px);
 				font-family: $font-stack-serif-yrsa;
 				font-weight: $font-weight-thin;
 			}

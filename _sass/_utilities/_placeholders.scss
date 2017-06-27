@@ -7,11 +7,20 @@
 	box-sizing: border-box;
 	border: em($nav-border-width) solid transparent;
 	border-bottom: em($nav-border-width) solid $color-nav-border;
+/*
+	border-left-width: 0;
+	border-right-width: 0;
+*/
 	border-left-color: transparent;
 	border-right-color: transparent;
+	
+	a {
+		
+	}
 	
 	&:not(.nav__item--active) a {
 		border-right: em($nav-border-width) solid transparent;
 		border-left: em($nav-border-width) solid transparent;
+// 		padding: em($nav-link-pad-y) em($nav-link-pad-x - 2 * $nav-border-width)
 	}
 }
