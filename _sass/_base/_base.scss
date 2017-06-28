@@ -8,8 +8,6 @@ html {
 }
 
 body {
-	@include mq(mobile) { font-size: em($font-size-sm); }
-	@include mq(small) { font-size: em($font-size-xs); }
 	background: $white;
 	color: $color-text-base;
 	font-family: $font-stack-serif-yrsa;
@@ -19,6 +17,8 @@ body {
 	margin: 0;
 	padding: 0;
 	border-top: 1.618 * em($nav-border-width) solid $black;
+	@include mq(mobile) { font-size: em($font-size-sm); }
+// 	@include mq(small) { font-size: em($font-size-xs); }
 	
 	&.home {
 		height: 100%;
