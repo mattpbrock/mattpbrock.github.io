@@ -5,11 +5,11 @@
 	
 	&-player {
 		width: 100%;
-		margin-bottom: em(21px);
+		margin-top: em(9px);
 	}
 	
 	&-follower-count {
-		margin: 0 auto;
+		margin: em(6px) 0 em(28px) auto;
 		width: 136px;
 		display: block;
 	}

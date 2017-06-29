@@ -2,24 +2,41 @@
 ================================================== */
 
 footer {
-	background: $white-dim;
-	padding: em(21px) 0 em(34px);
+	$background_gradient_width: 2.8px;
+	$color_a: $raw-sienna-transparent;
+	$color_b: $white-dim;
+	$angle_a: 58;
+	$angle_b: 90 + $angle_a;
+	
+	background:
+		repeating-linear-gradient(
+			#{$angle_a}deg, $color_a,
+			$color_a em($background_gradient_width),
+			$color_b em($background_gradient_width),
+			$color_b em($background_gradient_width * 2)
+		)/*
+,
+		repeating-linear-gradient(
+			#{$angle_b}deg, $color_a,
+			$color_a em($background_gradient_width),
+			$color_b em($background_gradient_width),
+			$color_b em($background_gradient_width * 2)
+		)
+*/;
+	border: em($background_gradient_width * 1.618) solid $color_b;
+	padding: em(21px) 0;
 }
 
 .social {
 	
 	&__block {
-		padding: em(12px) 0;
+		margin-bottom: em(9px);
 		text-align: center;
-	}
-	
-	&__heading {
-		text-decoration: underline;
 	}
 	
 	&__link {
 		display: inline-block;
-		font-size: em(21px);
+		font-size: em(24.8px);
 		
 		&:hover {
 			text-decoration: none;
@@ -27,7 +44,7 @@ footer {
 	}
 	
 	&__icon {
-		padding: em(6px);
+		margin: 0 em(3.8px);
 		color: lighten($color-text-base, 12%);
 		@include transition(color $transition-base);
 		

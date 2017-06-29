@@ -1,55 +1,63 @@
 /* # Site Styles
 ================================================== */
 
-.site__intro {
-	font-size: em(35.8px);
-	font-family: $font-stack-serif-abril;
-	font-weight: 100;
-	position: absolute;
-	top: 45.7%;
-	left: 0;
-	width: 61.8%; // 1/1.618
-	max-width: 752px;
-	padding: 0 em(25.9px);
-	background: rgba(255,255,255,.79);
-	border-left: none;
-  -webkit-backdrop-filter: saturate(180%) blur(12px); // thanks Apple!
-  backdrop-filter: saturate(180%) blur(12px);
-	@include transform(skew($heading-skew));
-	@include mq(laptop) { font-size: em(29.7px); }
-	@include mq(mobile) { font-size: em(23.6px); }
-	@include mq(small) {
-		font-size: em(19.8px);
-		top: 51%;
-		width: 76%;
-	}
+.site {
 	
-	&::before {
-		content: "";
-		width: em(41.9px);
-		background: rgba(255, 255, 255, 0.74);
+	@include e(intro) {
+		font-size: em(35.8px);
+		font-family: $font-stack-serif-abril;
+		font-weight: 100;
 		position: absolute;
-		top: 0;
-		left: em(-41.9px);
-		height: 100%;
+		top: 45.7%;
+		left: 0;
+		width: 61.8%; // 1/1.618
+		max-width: 752px;
+		padding: 0 em(25.9px);
+		background: rgba(255,255,255,.79);
+		border-left: none;
+	  -webkit-backdrop-filter: saturate(180%) blur(12px); // thanks Apple!
+	  backdrop-filter: saturate(180%) blur(12px);
+		@include transform(skew($heading-skew));
+		@include mq(laptop) { font-size: em(29.7px); }
+		@include mq(mobile) { font-size: em(23.6px); }
+		@include mq(small) {
+			font-size: em(19.8px);
+			top: 51%;
+			width: 76%;
+		}
+		
+		&::before {
+			content: "";
+			width: em(41.9px);
+			background: rgba(255, 255, 255, 0.74);
+			position: absolute;
+			top: 0;
+			left: em(-41.9px);
+			height: 100%;
+		}
+		
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -1px;
+			width: em(6.1px);
+			height: 100%;
+			background: #000;
+			transform: skew(-$heading-skew);
+		}
+		
+		p {
+			margin: em(12px) 0;
+			@include transform(skew(-$heading-skew));
+		}
 	}
 	
-	&::after {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: -1px;
-		width: em(6.1px);
-		height: 100%;
-// 		background: rgba(178,47,31,.8);
-// 		background: rgba(239,79,25,0.8);
-// 		background: rgba(76,206,141,0.9);
-		background: #000;
-		transform: skew(-$heading-skew);
+	@include e(credits) {
+		text-align: center;
+		font-size: em(14px);
+		color: $grey-dark;
+		margin: 0;
 	}
 	
-	p {
-		margin: em(12px) 0;
-		@include transform(skew(-$heading-skew));
-	}
 }
