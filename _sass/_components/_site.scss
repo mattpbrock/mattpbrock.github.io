@@ -18,7 +18,11 @@
 	@include transform(skew($heading-skew));
 	@include mq(laptop) { font-size: em(29.7px); }
 	@include mq(mobile) { font-size: em(23.6px); }
-	@include mq(small) { font-size: em(19.8px); }
+	@include mq(small) {
+		font-size: em(19.8px);
+		top: 51%;
+		width: 76%;
+	}
 	
 	&::before {
 		content: "";

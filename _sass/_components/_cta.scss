@@ -13,6 +13,14 @@
 		margin-top: 0;
 	}
 	
+	@include e(inner) {
+		padding: 0 em(16px);
+		
+		@media screen and (min-width: 568px) {
+			padding: 0 24%;
+		}
+	}
+	
 	@include e(heading) {
 		
 		.cta--alt & {

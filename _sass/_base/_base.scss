@@ -18,13 +18,16 @@ body {
 	padding: 0;
 	border-top: 1.618 * em($nav-border-width) solid $black;
 	@include mq(mobile) { font-size: em($font-size-sm); }
-// 	@include mq(small) { font-size: em($font-size-xs); }
 	
 	&.home {
 		height: 100%;
 		border: 0;
 		overflow: hidden;
 		background: url('#{$path--rel-img}/home-bg-2160px.jpg') no-repeat center center / cover;
+		@include mq(small) {
+			background-position-x: 40%;
+			font-size: em($font-size-xs);
+		}
 	}
 }
 
