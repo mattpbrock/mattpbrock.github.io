@@ -13,13 +13,13 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   
-  <meta property="og:url" content="{{ page.url | prepend: 'http://www.mattpbrock.com' }}" />
+  <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="{{ page.title }}" />
 	{% if page.description %}
 	<meta property="og:description" content="{{ page.description }}" />
 	{% endif %}
-	<meta property="og:image" content="{{ page.banner_url | prepend: 'http://www.mattpbrock.com' }}" />
+	<meta property="og:image" content="{{ page.banner_url | prepend: site.url }}" />
   
   {% if page.layout == 'home' %}
   	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
