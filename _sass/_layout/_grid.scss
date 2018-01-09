@@ -1,0 +1,39 @@
+/* # Grid Styles
+================================================== */
+
+.g {
+  &__row {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  &__col {
+
+    @media screen and (min-width: 400px) {
+      float: left;
+
+      @at-root {
+        [class*='g__col--'] {
+          @extend .g__col;
+          margin-right: 2%;
+          margin-left: 2%;
+        }
+      }
+
+      &--25 { width: 23%; }
+      &--33 { width: 31%; }
+      &--50 { width: 48%; }
+      &--66 { width: 65%; }
+      &--75 { width: 73%; }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
