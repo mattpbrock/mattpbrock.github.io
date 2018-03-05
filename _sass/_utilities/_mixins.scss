@@ -42,31 +42,46 @@
 
 // Media queries
 
-@mixin mq($break) {
+/**
+ *	Mobile First
+ */
+
+@mixin mq-mf($break) {
 	@if $break == "small" {
-		@media (max-width: $brkpoint-small) {
-			@content;
-		}
+		@media ( min-width: $brkpoint-small + 1 ) { @content; }
 	}
 	@else if $break == "mobile" {
-		@media (max-width: $brkpoint-mobile) {
-			@content;
-		}
+		@media ( min-width: $brkpoint-mobile + 1 ) { @content; }
 	}
 	@else if $break == "tablet" {
-		@media (max-width: $brkpoint-tablet) {
-			@content;
-		}
+		@media ( min-width: $brkpoint-tablet + 1 ) { @content; }
 	}
 	@else if $break == "laptop" {
-		@media (max-width: $brkpoint-laptop) {
-			@content;
-		}
+		@media ( min-width: $brkpoint-laptop + 1 ) { @content; }
 	}
 	@else if $break == "desktop" {
-		@media (max-width: $brkpoint-desktop) {
-			@content;
-		}
+		@media ( min-width: m$brkpoint-desktop + 1 ) { @content; }
+	}
+	@else {
+		@warn "Whoops! No value could be retrieved for '#{$break}'.";
+	}
+}
+
+@mixin mq($break) {
+	@if $break == "small" {
+		@media (max-width: $brkpoint-small) { @content; }
+	}
+	@else if $break == "mobile" {
+		@media (max-width: $brkpoint-mobile) { @content; }
+	}
+	@else if $break == "tablet" {
+		@media (max-width: $brkpoint-tablet) { @content; }
+	}
+	@else if $break == "laptop" {
+		@media (max-width: $brkpoint-laptop) { @content; }
+	}
+	@else if $break == "desktop" {
+		@media (max-width: $brkpoint-desktop) { @content; }
 	}
 	@else {
 		@warn "Whoops! No value could be retrieved for '#{$break}'.";
@@ -106,9 +121,9 @@
 
 // Pseudo element shapes
 @mixin p-el($el, $el-w: null, $el-h: null) {
-	
+
 	@if $el == "before" or $el == "after" {
-		&:#{$el} {		
+		&:#{$el} {
 			@extend %pseudos;
 			width: $el-w;
 			height: $el-h;
@@ -124,13 +139,12 @@
 
 @mixin g-columns {
 	@for $i from 1 through $g-col-count {
-		
+
 		$context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
 		$target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
-		
+
 		&--#{$i} {
 			width: percentage($target / $context);
 		}
 	}
 }
-

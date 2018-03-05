@@ -1,0 +1,20 @@
+/* # Song Styles
+================================================== */
+
+.song {
+
+  &__player {
+    @include mq-mf(mobile) {
+      float: right;
+    }
+  }
+
+  &__stanza {
+    margin-bottom: em(16px);
+  }
+
+  &__chorus {
+    font-style: italic;
+    padding-left: em(12px);
+  }
+}

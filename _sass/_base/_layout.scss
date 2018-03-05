@@ -3,6 +3,7 @@
 
 main {
 	padding: em(42px) 0;
+	min-height: em(400px);
 	transform-style: preserve-3d;
 	@include animation(content-fade-in 110ms ease-out 0ms 1 forwards);
 }

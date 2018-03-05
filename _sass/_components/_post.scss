@@ -2,16 +2,17 @@
 ================================================== */
 
 .post {
-	
+	margin-top: em(38px);
+
 	&__title { }
-	
+
 	&__meta {
 		margin-bottom: em(41.9px);
 	}
-	
+
 	&__list {
 		margin: 0;
 		padding: 0;
 	}
-	
+
 }

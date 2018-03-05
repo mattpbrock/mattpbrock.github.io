@@ -2,13 +2,29 @@
 ================================================== */
 
 .spotify {
-	
-	&-player {
-		width: 100%;
-		margin-top: em(9px);
+
+	&__player {
+		max-width: 100%;
+		background: #282828;
+		border-radius: 1px;
+
+		@include mq-mf(mobile) {
+			margin: em(21px) 0 em(21px) em(12px);
+			padding: 9px;
+		}
+
+		&--small {
+			box-sizing: content-box;
+		}
+
+		&--wide {
+			margin-left: 0;
+			margin-right: 0;
+			width: 100%;
+		}
 	}
-	
-	&-follower-count {
+
+	&__follower-count {
 		margin: em(6px) 0 em(28px) auto;
 		width: 136px;
 		display: block;
