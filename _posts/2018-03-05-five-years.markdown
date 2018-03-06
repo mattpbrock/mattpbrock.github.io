@@ -3,7 +3,6 @@ layout: post
 title: Five Years
 date: 2018-03-05 3:03 -0600
 categories:
- - general
  - music
 preview: Five years ago today, on March 5, 2013, I released my first&mdash;and, to date, my only&mdash;studio album, <em>From the Land of Shadows</em>. In the weeks leading up to today, I've experienced a pretty decent range of emotions, from joy to sadness and everything in between.
 banner_url: /img/blog/20180305-five-years.jpg

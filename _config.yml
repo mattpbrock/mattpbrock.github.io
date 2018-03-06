@@ -20,3 +20,4 @@ github_username:  mattpbrock
 
 # Build settings
 markdown: kramdown
+permalink: /write/:title
